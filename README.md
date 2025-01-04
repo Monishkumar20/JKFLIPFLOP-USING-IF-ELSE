@@ -46,10 +46,10 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROGRAM**
 
- Developed by:KAMLESH.Y RegisterNumber:24003690 
+ Developed by:MONISH KUMAR.B RegisterNumber:24005813
 
  ```
- module exp7 (j, k, clk, rst, q);
+module jk_ff(j, k, clk, rst, q);
   input j, k, clk, rst;
   output reg q;
   always @(posedge clk or posedge rst) begin
@@ -64,14 +64,15 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
     else if (j == 1 && k == 1)
       q <= ~q; // Toggle
   end
+ endmodule
 ```
 **RTL LOGIC FOR FLIPFLOPS**
 
-![image](https://github.com/user-attachments/assets/f83e6894-a295-4e22-b4eb-e3b5d8943973)
+![image](https://github.com/user-attachments/assets/a83d4d26-b6d1-4fed-93b2-a5735598a903)
 
 **TIMING DIAGRAMS FOR FLIP FLOPS**
 
-![image](https://github.com/user-attachments/assets/57dc67e5-04b9-47cf-8fac-4f18267f78b7)
+![image](https://github.com/user-attachments/assets/cfeedf33-9cce-42d0-ba62-25d5f13a889a)
 
 **RESULTS**
- Thus,the code executed successfully.
+Thus the implementation of JK flipflop using verilog and validating their functionality using their functional tables is verified.
